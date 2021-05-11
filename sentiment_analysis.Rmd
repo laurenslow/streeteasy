@@ -69,7 +69,7 @@ afinn
 ```
 
 ```{r make variables for number of words and characters}
-# run chunks 6 and 16 to get sentiments_join
+# run chunks 6 and 16 in decision_tree_analysis to get sentiments_join
 sentiment_wc <- sentiments_join %>%
   mutate(char_count = str_count(listing_description), 
          word_count = sapply(strsplit(listing_description, " "), length))
